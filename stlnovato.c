@@ -2,10 +2,9 @@
 #include <string.h>
 
     // Usei fgets(limpan, 3, stdin) pra limpar o \n que é gerado no scanf, caso contrario não seria possivel usar fgets após scanf
-    // V1 - Codigo base, será atualizado
-
+    // V2 - Versão final, acredito
 int main() {
-/*    char carta1[3], carta2[3], estado1[4], estado2[4], codigo1[5], codigo2[5], cid1[20], cid2[20], limpan[3];
+	char carta1[3], carta2[3], estado1[4], estado2[4], codigo1[5], codigo2[5], cid1[20], cid2[20], limpan[3];
     int pop1, pop2, ptur1, ptur2;
     float area1, area2, pib1, pib2;
 	// Preenchimento de dados da primeira carta
@@ -48,12 +47,11 @@ int main() {
     scanf("%f", &pib2);
     printf("Digite o valor para Número de pontos turísticos: ");
     scanf("%d", &ptur2);
-	*/
 	
-	// Preguiça de ficar digitando toda hora pra testar uma linha
+	/* Preguiça de ficar digitando toda hora pra testar uma linha
 	char carta1[] = "1", carta2[] = "2", estado1[] = "SP", estado2[] = "RJ", codigo1[] = "A01", codigo2[] = "B02", cid1[] = "São Paulo", cid2[] = "Rio de Janeiro";
 	int pop1 = 12325000, pop2 = 6748000, ptur1 = 50, ptur2 = 30;
-    float area1 = 1521.11, area2 = 1200.25, pib1 = 699.28, pib2 = 300.50;
+    float area1 = 1521.11, area2 = 1200.25, pib1 = 699.28, pib2 = 300.50; */
 	
     // Converte pib por extenso
     long int pibx1 = pib1 * 1000000000; 
@@ -92,32 +90,6 @@ int main() {
     } else {
         printf("Carta %s (%s) venceu\n", carta2, cid2);
     }    
-    /*
-	if (pib1 > pib2) {
-        printf("PIB: Carta 1 venceu\n");
-    } else {
-        printf("PIB: Carta 2 Venceu\n");
-    }    
-    if (ptur1 > ptur2) {
-        printf("Pontos Turisticos: Carta 1 venceu\n");
-    } else {
-        printf("Pontos Turisticos: Carta 2 Venceu\n");
-    }    
-    if (dens1 < dens2) {
-        printf("Densidade Populacional: Carta 1 venceu\n");
-    } else {
-        printf("Densidade Populacional: Carta 2 Venceu\n");
-    }
-    if (ppc1 > ppc2) {
-        printf("PIB per Capita: Carta 1 venceu\n");
-    } else {
-        printf("PIB per Capita: Carta 2 Venceu\n");
-    }
-    if (spoder1 > spoder2) {
-        printf("Super Poder: Carta 1 venceu\n");
-    } else {
-        printf("Super Poder: Carta 2 Venceu\n");
-    }*/
 
     return 0;
 }
